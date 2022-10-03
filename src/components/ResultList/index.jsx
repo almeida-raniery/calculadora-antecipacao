@@ -21,7 +21,7 @@ function ResultList({
         <div>
           <h1>Você Receberá:</h1>
           {Object.keys(results).map((key) => (
-            <h3>
+            <h3 key={key}>
               Em {key} dias: {formatValue(results[key])}
             </h3>
           ))}
